@@ -1,0 +1,12 @@
+<ng-content></ng-content>
+
+<!-- Next and previous buttons -->
+<a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+<a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+<!-- The dots/circles -->
+<div class="dots">
+    <span #dot class="dot" (click)="currentSlide(1)"></span>
+    <span #dot class="dot" (click)="currentSlide(2)"></span>
+    <span #dot class="dot" (click)="currentSlide(3)"></span>
+</div>
